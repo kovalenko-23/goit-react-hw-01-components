@@ -1,6 +1,49 @@
-.description {
-  /* background-color: red; */
+.profile {
+  width: 250px;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 30px;
   display: inline-flex;
   flex-direction: column;
   border: 1px solid purple;
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.avatar {
+  padding-top: 20px;
+}
+
+.tag,
+.location {
+  color: rgb(159, 159, 154);
+}
+
+.stats {
+  background-color: rgb(235, 230, 230);
+  display: flex;
+}
+
+.stats__item {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: calc(100% / 3);
+}
+
+.stats__item:first-child {
+  border-right: 1px solid;
+}
+
+.stats__item:last-child {
+  border-left: 1px solid;
+}
+
+.label {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(159, 159, 154);
 }

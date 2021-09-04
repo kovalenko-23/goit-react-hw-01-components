@@ -1,0 +1,25 @@
+.transaction__history {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 5px;
+  border: 1px solid;
+}
+
+th {
+  background-color: lightgray;
+}
+
+tr:nth-child(2n) {
+  background-color: rgb(243, 182, 230);
+}
+
+tr:nth-child(2n - 1) {
+  background-color: rgb(165, 216, 198);
+}

@@ -1,0 +1,27 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: calc(100% / 5);
+}
+
+.docx {
+  composes: description;
+  background-color: rgb(76, 192, 218);
+}
+
+.pdf {
+  composes: description;
+  background-color: darkkhaki;
+}
+
+.mp3 {
+  composes: description;
+  background-color: rgb(120, 225, 153);
+}
+
+.psd {
+  composes: description;
+  background-color: rgb(117, 47, 171);
+}

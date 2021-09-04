@@ -2,7 +2,8 @@ import s from './Statistics.module.css'
 import PropTypes from 'prop-types'
 import Stat from '../Stat/Stat';
 
-function Statistics({stats}) {
+function Statistics({ stats }) {  
+
     return (
         <section className={s.statistics}>
         <h2 className={s.title}>Upload stats</h2>
@@ -10,6 +11,7 @@ function Statistics({stats}) {
         {stats.map(item => (
             <Stat
                 key={item.id}
+                id={item.id}
                 label={item.label}
                 percentage={item.percentage}
             />

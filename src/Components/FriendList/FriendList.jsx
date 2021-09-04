@@ -9,6 +9,7 @@ function FriendList({friends}) {
             {friends.map(friend => (
                     <Friend
                         key={friend.id}
+                        id={friend.id}
                         avatar={friend.avatar}
                         name={friend.name}
                         status={friend.isOnline}

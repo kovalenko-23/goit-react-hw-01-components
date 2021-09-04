@@ -1,0 +1,14 @@
+.statistics {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.stat_list {
+  display: inline-flex;
+  width: 400px;
+}
