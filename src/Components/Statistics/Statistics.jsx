@@ -2,11 +2,16 @@ import s from './Statistics.module.css'
 import PropTypes from 'prop-types'
 import Stat from '../Stat/Stat';
 
-function Statistics({ stats }) {  
+function Statistics({ stats, title }) {
+    let titleStyle = null;
+    
+    if (!title) {
+        titleStyle = {display: "none"};
+    }
 
     return (
         <section className={s.statistics}>
-        <h2 className={s.title}>Upload stats</h2>
+        <h2 className={s.title} style={titleStyle}>{title}</h2>
         <ul className={s.stat_list}>
         {stats.map(item => (
             <Stat
@@ -22,6 +27,7 @@ function Statistics({ stats }) {
 }
 
 Statistics.protoType = {
+    title: PropTypes.string,
     stats: PropTypes.arrayOf(PropTypes.shape({
         key: PropTypes.string.isRequired
     }),),

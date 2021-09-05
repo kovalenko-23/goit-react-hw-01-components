@@ -5,11 +5,7 @@ import {FaGrin} from 'react-icons/fa';
 import {FaFrown} from 'react-icons/fa';
 
 
-function Friend({ avatar, name, status }) {
-if (avatar !== true) {
-    avatar = defaultImage;
-}
-
+function Friend({ avatar = defaultImage, name, status }) {
 
 return (
     <li className={s.item}>

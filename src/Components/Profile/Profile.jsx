@@ -2,10 +2,8 @@ import s from './Profile.module.css';
 import PropTypes from 'prop-types'
 import defaultImage from './profile.svg'
 
-function Profile({ name, tag, location, avatar, stats }) {
-    if (avatar !== true) {
-        avatar = defaultImage;
-    }
+function Profile({ name, tag, location, avatar = defaultImage, stats }) {
+
 
     return (
         <div className={s.profile}>
